@@ -1,10 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'ng-qdt-template';
+export class AppComponent implements OnInit {
+  ngOnInit(): void {
+    const OBJECT_ID = 'SOME_OBJECT_ID';
+    console.log(OBJECT_ID);
+  }
 }
